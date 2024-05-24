@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAN-Resume</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#resumepic">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    <div class="container">
+    <div class="header">
+        <img src="picture.png" id="pfp">
+        <p class="hi">Hi! I'm <br> <span style="color:yellow">Reese Chan</span> </p>
+    </div>
+
+    <div class="content1">
+        <div class="content1-text">
+        <p >Here's what I've done:</p>
+
+        <div class="row">
+            <div class="column">
+              <img src="image-1.png" alt="Godot" style="width:100%">
+              <p class="caption">Developed a game in Godot</p>
+            </div>
+            <div class="column">
+              <img src="image-2.png" alt="Hazards" style="width: 100%">
+              <p class="caption">Built a website for hazard prevention</p>
+            </div>
+            <div class="column">
+              <img src="image-3.png" alt="currency exchange" style="width:100%">
+              <p class="caption">Programmed a currency exchange</p>
+            </div>
+          </div>
+        </div>
+
+        <div id = "resumepic">
+            <img src="resumepic.png" style="width: 50%; margin-left: 28%;">
+        </div>
+
+        <div id = "contact">
+            <div class="content2">
+                <p>My Contact Info: </p>
+                <div class="content2-text">
+                    <ul>
+                        <li><p>Personal Email: reesec.chan@gmail.com</p></li>
+                        <li><p>Number: 0976-072-8667</p></li>
+                        <li><p>Business Email: 2022900086@feuhighschool.edu.ph</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   
+    
+</div>
+</body>
+<style>
+body {
+    font-family: century gothic;
+}
+.navbar {
+  background-color: green;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.header {
+    background-color: #006A4E;
+    color:white;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+.hi {
+    margin-left: -10%;
+    font-size: 50px;
+    padding-right: 0%
+}
+#pfp {
+    padding: 10px;
+    height: 150px;
+    display: block;
+    margin-left: 60%;
+    margin-right: auto;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.header, .content1 {
+    margin: 0;
+    padding: 0;
+}
+
+.content1 {
+    background-color:#04AA6D
+
+}
+.content1-text{
+    margin-left: 3%;
+    font-size: xx-large;
+}
+.content2{
+    margin-left: 3%;
+    font-size: xx-large;
+}
+.content2-text {
+    margin-left: 5%;
+    font-size: x-large;
+    text-align: left;
+}
+.container {
+        display: flex;
+        flex-direction: column;
+}
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.caption {
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: white
+}
+.resume {
+    width: 90%
+}
+</style>
+</html>
